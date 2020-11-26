@@ -13,6 +13,7 @@ check50:
       - run: python3 bar.py # run python3 bar.py
         stdin: baz # insert baz into stdin
         stdout: bar baz # expect bar baz in stdout
+        exit: 0 # expect program to exit with exitcode 0
       - run: python3 bar.py # run python3 bar.py
         stdin:
           - baz # insert baz into stdin
