@@ -20,3 +20,4 @@ check50:
         stdout:
           - bar baz # first expect bar baz in stdout
           - bar qux # then expect bar qux in stdout
+        exit: 0 # expect program to exit with exitcode 0
